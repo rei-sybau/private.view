@@ -38,13 +38,52 @@ html,body{
   text-indent: 40px;
   font-family:sans-serif;
 }
+
 .right{
   background:black;
+  position: relative; /* ДОБАВЛЕНО */
 }
 
 .right img{
   width:100%;
   display:block;
+}
+
+/* ===== ВЕРТИКАЛЬНЫЙ ТЕКСТ ===== */
+.side-text-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  font-size: 20px;
+  color: white;
+
+  padding: 10px;
+  pointer-events: none;
+}
+
+.side-text-left{
+transform: rotate(-180deg);
+
+}
+.side-text-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  text-orientation: mixed;
+
+  font-size: 20px;
+  color: white;
+
+  padding: 10px;
+  pointer-events: none;
+
+  transform: rotate(deg);
 }
 
 /* ===== МОБИЛА (только тут поворот) ===== */
@@ -66,7 +105,6 @@ html,body{
     transform-origin:top left;
   }
 
-  /* ВОТ ЭТА ЧАСТЬ НОВАЯ ↓ */
   .container{
     width:100vh;
     height:100vw;
@@ -94,28 +132,34 @@ html,body{
 
 <p>Пришел, я&nbsp;отошел, свернул направо, прошел через проход, зашел вовнутрь. подошел к&nbsp;двери, повернул ручку, открыл дверь.&nbsp;я&nbsp;внутри, внутри три человека, одна девушка, два парня.&nbsp;я&nbsp;подошел, на&nbsp;меня смотрят, я&nbsp;говорю, мне что-то говорят, я&nbsp;слушаю, мы&nbsp;говорим, мы&nbsp;смотрим на&nbsp;друг друга, я&nbsp;делаю вдох, я&nbsp;делаю выдох. спасибо. боль в&nbsp;ногах, не&nbsp;чувствую. стою, устал. присел, курю, смотрю, слушаю. телефон, пять пропущенных, похуй. все вокруг исчезли. улица. раз тележка, два, три, четыре. телефон сел, теперь меня никто не&nbsp;побеспокоит. </p>
 
-<p>Встретил одного давно забытого человека, у&nbsp;нас случился какой-то диалог про то&nbsp;как было раньше и&nbsp;как больше не&nbsp;будет. Раньше при встрече молодые люди снимали шляпу, а&nbsp;теперь вытаскивают из&nbsp;уха наушник. Я&nbsp;сказал что-то, пожал руку и&nbsp;ушел.
+<p>Встретил одного давно забытого человека, у&nbsp;нас случился какой-то диалог про то&nbsp;как было раньше и&nbsp;как больше не&nbsp;будет. Раньше при встрече молодые люди снимали шляпу, а&nbsp;теперь вытаскивают из&nbsp;уха наушник. Я&nbsp;сказал что-то, пожал руку и&nbsp;ушел.</p>
+
 <p>одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога, одна нога, другая нога.</p>
 
 <h1>Я все еще здесь.</h1>
 <p>На единственных найденных джинсах, купленных за две тысячи рублей пятно, которое я так и не смог отмыть, которая будет напоминать о том дне, когда мне неправильно написали имя на кофе.</p>
 <p>Споткнулся об&nbsp; яму на&nbsp; асфальте, обронил пачку сигарет и&nbsp; увидел свое ебло на&nbsp; лице на&nbsp; луже, то&nbsp; есть в&nbsp; яме и&nbsp; не&nbsp; захотел жить.</p>
+
 <h1>…..я устал.</h1>
-<p>
-  Не&nbsp; принимай жизнь слишком серьезно, ты&nbsp; никогда не&nbsp; выберешься из&nbsp; нее живым. Хорошо.
-Кажется, что&nbsp; я&nbsp; в&nbsp; другом мире, где всё вокруг сплошное наебалово. Правда.
-</p>
+
+<p>Не&nbsp;принимай жизнь слишком серьезно, ты&nbsp;никогда не&nbsp;выберешься из&nbsp;нее живым. Хорошо. Кажется, что&nbsp;я&nbsp;в&nbsp;другом мире, где всё вокруг сплошное наебалово. Правда.</p>
+
 <p>……..Нет сил писать это дерьмо.</p>
-<P>Cпокойной ночи.</P>
-          </p>
+<p>Спокойной ночи.</p>
+
         </div>
+
       <p>еще текст</p>
       <p>еще текст</p>
       <br><br><br><br><br><br><br><br><br><br>
-      <p><a href="https://blahblahblahpoetry.online/" rel="noopener noreferrer" style="color: black; ">https://blahblahblahpoetry.online/</a></p>
+      <p><a href="https://blahblahblahpoetry.online/" style="color:black;">https://blahblahblahpoetry.online/</a></p>
+      <p><a href="https://www.instagram.com/the_low_2020/" style="color:black;">https://www.instagram.com/the_low_2020/</a></p>
     </div>
 
     <div class="right">
+      <div class="side-text-left">В меру хуевый текст, написанный в три ночи <br>Нет, мы не издательство</div>
+      <div class="side-text-right">2026<br> </div>
+
       <img src="images/img1.jpg">
       <img src="images/img2.jpg">
       <img src="images/img3.jpg">
